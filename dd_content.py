@@ -19,7 +19,7 @@ def get_random_quote(quotes_file='my_quotes.csv'):
 
 
 # Get Weather Forcast
-def get_weather_forecast(coords={'lat': 33.7557, 'lon': -96.5637}): # default location at Cape Canaveral, FL
+def get_weather_forecast(coords={'lat': 33.7557, 'lon': -96.5637}): # default location at Denison, TX
     try: # retrieve forecast for specified coordinates
         api_key = 'YOUR_API_KEY' # replace with your own OpenWeatherMap API key
         url = f'https://api.openweathermap.org/data/2.5/forecast?lat={coords["lat"]}&lon={coords["lon"]}&appid={api_key}&units=metric'
