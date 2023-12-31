@@ -7,7 +7,7 @@ import datetime
 
 
 # Get Random Quote
-def get_random_quote(quotes_file='my_quotes.py'):
+def get_random_quote(quotes_file='my_quotes.csv'):
 	try: # load motivational quotes from csv file 
 	    with open(quotes_file) as csvfile:
 	                     quotes = [{'author': line[0],
